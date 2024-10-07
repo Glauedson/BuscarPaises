@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="../Css/maisDetalhes.css">
+    <link rel="website icon" href="../Imagens/Icons/map-solid.svg">
+    <title id="nomeTopo"></title>
+</head>
+<body>
+    <header id="background">
+            <div class="logo">
+                <img width="30px" src="../Imagens/Icons/map-solid.svg">
+                <h1>BUSCAR PAÍSES</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+       <div class="inicio">
+            <div class="home-pais">
+                    <a href="../html/index.html">
+                        <img src="../Imagens/Icons/arrow-left-solid.svg"
+                        width="20px"
+                        height="20px"
+                        >
+                    </a>
+                <h1 id="nome-pais"></h1>
+            </div>
+        </div> 
+        <div class="bandeira-info">
+            <div id="bandeira-pais" class="bandeira">
+
+            </div>
+            <div class="info">
+                <p id="wiki-info-pais"></p>
+            </div>
+        </div>
+        <!--Informações em caixas-->
+        <div class="info-pais-caixa">
+            <div class="caixa-prin">
+                <div class="lingua">
+                    <div class="titulo">
+                        <img src="../Imagens/Icons/language-solid.svg"
+                        width="30px">
+                        IDIOMA
+                    </div>
+                    <div class="info-caixa">
+                        <h1 id="Idioma"></h1>
+                    </div>
+                </div>
+                <div class="moeda">
+                    <div class="titulo">
+                        <img src="../Imagens/Icons/coins-solid.svg"
+                        width="20px">
+                        MOEDA
+                    </div>
+                    <div class="info-caixa">
+                        <h1 id="Moeda"></h1>
+                    </div>
+                </div>
+                <div class="continente">
+                    <div class="titulo">
+                        <img src="../Imagens/Icons/earth-europe-solid.svg"
+                        width="20px">
+                        CONTINENTE
+                    </div>
+                    <div class="info-caixa">
+                        <h1 id="Continente"></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="caixa-segun">
+                <div class="populacao">
+                    <div class="populacao-conteudo">
+                        <div class="populacao-titulo">
+                            <img src="../Imagens/Icons/person-solid.svg" width="20px">
+                            <p>POPULAÇÃO</p>
+                        </div>
+                        <h1 id="Populacao"></h1>
+                    </div>
+                </div>
+                <div class="area-geo">
+                    <div class="area-geo-conteudo">
+                        <div class="area-geo-titulo">
+                            <img src="../Imagens/Icons/maximize-solid.svg" width="35px">
+                            <p>ÁREA GEOGRAFICA</p>
+                        </div>
+                        <h1 id="Area"></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Capital area-->
+        <div class="capital-titulo">
+            <p>CAPITAL:</p>
+            <h1 id="capial"></h1>
+        </div>
+        <div class="info-capital-caixa">
+            <div class="info-capital">
+                <p id="Info-Capital"></p>
+            </div>
+            <div id="Foto-Capital" class="foto-capital">
+            </div>
+        </div>
+        <div class="titulo-maps">
+            <p>MAPA</p>
+        </div>
+        <div id="map" style="height: 500px; width: 80%;"></div>
+    </main>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="../Js/maisDetalhes.js"></script>
+</body>
+</html>

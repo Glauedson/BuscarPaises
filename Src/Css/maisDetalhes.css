@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+body{
+    margin: 0;
+    background-color: #D6D6D6;
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+}
+
+.cab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    position: absolute;
+    display: flex;
+    color:white;
+    text-shadow: 0px 0px 7px #000000e3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main{
+    background-color: #e7eaee;
+    top: 350px;
+    background-color: #D6D6D6;
+    position: absolute;
+    width: 100%;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    box-shadow: 0px -9px 10px 0px rgba(0, 0, 0, 0.589);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+}
+
+.inicio{
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+}
+
+.home-pais{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.home-pais > h1{
+    margin: 0;
+    color: #353131;
+    font-style: bold;
+}
+
+.home-pais > a{
+    background-color: #ffffff;
+    border: none;
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.3);
+    transition: 1s;
+}
+
+.home-pais > a:hover{
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.7);
+    transition: 1s;
+}
+
+.bandeira-info{
+    width: 80%;
+    display: flex;
+    gap: 20px;
+}
+
+.bandeira img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.info{
+    text-align: start;
+    max-width: 50%;
+    min-height: 300px;
+    font-size: x-large;
+    font-style: italic;
+    margin-left: 40px;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    color: #151414;
+}
+
+.info > P{
+    margin: auto;
+}
+
+.info-pais-caixa{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 29px;
+}
+
+.caixa-prin{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.caixa-prin > div{
+    min-width: 30%;
+    background-color: rgb(34, 33, 32);
+    color: white;
+    border-radius: 18px;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.7);
+    transition: 1s;
+}
+
+.caixa-prin > div:hover{
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.9);
+    transition: 1s;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 35px;
+    gap: 6px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.info-caixa{
+    min-height: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.info-caixa > h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    margin: 10px 12px 10px 12px;
+}
+
+.caixa-segun{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.populacao {
+    background-color: #26670F;
+    min-width: 49.5%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.7);
+    transition: 1s;
+}
+
+.populacao:hover{
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.9);
+    transition: 1s;
+}
+
+.populacao-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.populacao-conteudo > h1{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 90px;
+    margin: 0;
+}
+
+.populacao-titulo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+}
+
+.area-geo{
+    background-color: #26670F;
+    min-width: 49.5%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.7);
+    transition: 1s;
+}
+
+.area-geo:hover{
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.9);
+    transition: 1s;
+}
+
+.area-geo-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.area-geo-conteudo > h1{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 90px;
+    margin: 0;
+}
+
+.area-geo-titulo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+}
+
+.capital-titulo{
+    margin-top: 35px;
+    width: 80%;
+    text-align: left;
+    color: #212020;
+}
+
+.capital-titulo > h1,p{
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.capital-titulo > h1{
+    font-size: 60px;
+}
+
+.info-capital-caixa{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+
+}
+
+.info-capital{
+    width: 49.3%;
+    min-height: 400px;
+    text-align: start;
+    font-size: x-large;
+    font-style: italic;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    color: #151414;
+    margin-bottom: 15px;
+}
+
+.foto-capital{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 49.3%;
+}
+
+.titulo-maps{
+    margin-top: 30px;
+    background-color: #1f201f;
+    width: 80%;
+    padding: 20px 0px 20px 0px;
+    border-radius: 15px 15px 0px 0px;
+    font-family: "Ubuntu", sans-serif;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+#map{
+    margin-bottom: 50px;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.7);
+    background-color: #1f201f;
+}
+
+
+@media (max-width: 1320px) { /* Telas como de tablet */
+    .bandeira-info {
+        flex-direction: column; 
+        align-items: center;
+        min-width: 100%;
+    }
+
+    .info{
+        margin-top: 18px;
+        min-width: 80%;
+        min-height: 0px;
+        font-size: larger;
+        margin-left: 0px;
+    }
+
+    .bandeira img {
+        max-width: 60%; 
+    }
+
+    .area-geo{
+        min-height: 200px;
+    }
+
+    .area-geo-conteudo > h1{
+        font-size: 50px;
+    }
+
+    .area-geo-titulo{
+        font-size: 15px;
+    }
+
+    .area-geo-titulo > img{
+        width: 25px;
+    }
+
+    .populacao {
+        min-height: 200px;
+    }
+
+    .populacao-conteudo > h1{
+        font-size: 50px;
+    }
+
+    .populacao-titulo{
+        font-size: 15px;
+    }
+
+    @media (max-width: 980px){
+
+        .info-capital-caixa{
+            height: auto;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            min-height: none;
+            min-height: 0px;
+            background-color: rgb(34, 33, 32);
+            border-radius: 0px 15px 0px 15px;
+            box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.7);
+        }
+
+        .info-capital > p{
+            color: white;
+            padding: 20px;
+            font-size: medium;
+        }
+
+        .info-capital{
+            width: 100%;
+            min-height: 0px;
+        }
+
+        .foto-capital{
+            min-width: 100%;
+            height: 350px;
+            border-radius: 0px 0px 0px 15px
+        }
+    }
+
+    @media (max-width: 878px){
+
+        .caixa-prin{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+        }
+
+        .caixa-prin > div{
+            min-width: 100%;
+        } 
+
+        .caixa-segun{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 14px;
+        }
+    
+        .populacao{
+            width: 100%;
+        }
+    
+        .area-geo{
+            width: 100%;
+        }
+    }
+
+    .capital-titulo > h1{
+        font-size: 40px;
+    }
+}
+
+@media ( max-width: 500px) { /* celulares */
+    .bandeira-info {
+        flex-direction: column; 
+        align-items: center;
+        min-width: 100%;
+    }
+
+    .info{
+        margin-top: 10px;
+        min-width: 80%;
+        font-size: medium;
+        margin-left: 0px;
+    }
+
+    .bandeira img {
+        max-width: 80%; 
+    }
+
+    .populacao-conteudo > h1{
+        font-size: 30px;
+    }
+
+    .area-geo-conteudo > h1{
+        font-size: 30px;
+    }
+
+    .capital-titulo > h1{
+        font-size: 30px;
+    }
+
+}
