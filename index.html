@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" href="Src/Imagens/Icons/map-solid.svg">
+    <link rel="stylesheet" href="Src/Css/index.css">
+    <title>Buscador de países / Web-I</title>
+</head>
+<body>
+    <div id="preloader">
+        <img src="Src/Imagens/Icons/map-solid.svg" alt="Logo do Site" class="carregar">
+    </div>
+    <header>
+        <div class="cab">
+            <div class="logo">
+                <img width="30px" src="Src/Imagens/Icons/map-solid.svg">
+                <h1>BUSCAR PAÍSES</h1>
+            </div>
+            <div class="filtros">
+                <input value="all" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" checked /> Todos
+                <input value="america" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" /> America
+                <input value="europe" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" /> Eupora
+                <input value="asia" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" /> Asia
+                <input value="africa" onchange="pesquisarPaisPorFiltro(this.value)" type="radio" name="filtros" /> Africa
+            </div>
+            <div class="barra-busca">
+                <input class="buscar" onkeyup="buscarPaises(this.value)" type="text" placeholder="digite o nome do país"/>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h3>TOTAL DE PAISES: <span id="qtPaises">250</span></h2></h3>
+        
+        <div class="todosPaises">
+        </div>
+    </main>
+    <script src="Src/Js/index.js"></script>
+</body>
+</html>

@@ -56,7 +56,7 @@ function abrirPaginaDetalhes(event){
     paisId = event.target.id
   }
 
-  window.location.href = `./maisDetalhes.html?id=${paisId}`
+  window.location.href = `Src/html/maisDetalhes.html?id=${paisId}`
 }
 
 function buscarPaises(value) {
