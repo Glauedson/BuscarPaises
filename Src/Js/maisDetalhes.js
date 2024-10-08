@@ -27,9 +27,6 @@ async function codigoPrincipal() {
     var subdados = dados[0]
     var IdiomaDado = Object.values(subdados.languages).join(`, `)
     var MoedaDado = Object.values(subdados.currencies)[0].name
-    const lat = subdados.latlng[0]; 
-    const lng = subdados.latlng[1]; 
-
 
     TopoNome.innerHTML = `${subdados.translations.por.common} - ${paisId.toUpperCase()}`
     NomePais.innerHTML = `${subdados.translations.por.common.toUpperCase()}`
@@ -43,8 +40,8 @@ async function codigoPrincipal() {
 
   
     // wikipedia --------------
-    var urlwiki = await fetch(`https://pt.wikipedia.org/api/rest_v1/page/summary/${subdados.translations.por.common}`)
-    var dadoswiki = await urlwiki.json()
+    var urlwiki = await fetch(`https://pt.wikipedia.org/api/rest_v1/page/summary/${subdados.translations.por.common}_(país)`)
+    var dadoswiki
     var CapitalWiki = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${subdados.capital}`)
     var CapitalDados = await CapitalWiki.json()
     var CapitalWikiBR = await fetch(`https://pt.wikipedia.org/api/rest_v1/page/summary/${subdados.capital}`)
@@ -56,18 +53,30 @@ async function codigoPrincipal() {
     Background.style.backgroundImage = `url(../Imagens/img-paises/main-erro.jpg)`
     }
 
+    if (urlwiki.ok){
+        dadoswiki = await urlwiki.json()
+    } else {
+        var urlwiki = await fetch(`https://pt.wikipedia.org/api/rest_v1/page/summary/${subdados.translations.por.common}`)
+        if (urlwiki.ok){
+            dadoswiki = await urlwiki.json()
+        }
+    }
+
     InfoPais.innerHTML = `${dadoswiki.extract}`
     FotoCapital.style.backgroundImage =  `url(${CapitalDados.originalimage.source})`
     InfoCapital.innerHTML = `${CapitalDadosBR.extract}`
 
     // Leaflet 
+    const lat = subdados.latlng[0]; 
+    const lng = subdados.latlng[1]; 
+
     var map = L.map('map').setView([lat, lng], 6);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
     L.marker([lat, lng]).addTo(map)
-        .bindPopup(`<b>${subdados.capital}</b><br>Capital de ${subdados.translations.por.common}`)
+        .bindPopup(`<b>${subdados.translations.por.common}</b><br>Localização do país.`)
         .openPopup();
 
   }
