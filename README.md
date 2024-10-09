@@ -87,5 +87,7 @@ A API do Wikipedia pode ser usada para buscar informações e imagens sobre o pa
 ```
 
 ## Projeto na tela de celular
-
-![alt text](image-5.png)![alt text](image-6.png)
+### Pagina inicial
+![alt text](image-5.png)
+### Pagina de detalhes
+![alt text](image-1.png)
