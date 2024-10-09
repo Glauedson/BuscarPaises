@@ -5,7 +5,7 @@
 O **Buscador de Países** é um site que permite ao usuário explorar informações detalhadas sobre países ao redor do mundo. Na página principal, o usuário visualiza bandeiras e os nomes dos países. Ao clicar em uma bandeira, o usuário é redirecionado para uma página dedicada ao país selecionado, com mais informações, incluindo texto e imagens, fornecidas pela API RestCountries e pela API do Wikipedia.
 
 ## Tela inicial no computador
-![alt text](image.png)
+![alt text](/imagens-readme/image.png)
 
 ## Funcionalidades
 
@@ -26,9 +26,9 @@ O **Buscador de Países** é um site que permite ao usuário explorar informaç�
 - Integração com a API do Wikipedia para obter mais informações e imagens adicionais sobre o país.
 
 ## Tela secundaria no computador
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
+![alt text](/imagens-readme/image-2.png)
+![alt text](/imagens-readme/image-3.png)
+![alt text](/imagens-readme/image-4.png)
 
 ## Tecnologias Utilizadas
 
@@ -88,6 +88,8 @@ A API do Wikipedia pode ser usada para buscar informações e imagens sobre o pa
 
 ## Projeto na tela de celular
 ### Pagina inicial
-![alt text](image-5.png)
+![alt text](/imagens-readme/image-5.png)
 ### Pagina de detalhes
-![alt text](image-1.png)
+![alt text](/imagens-readme/image-1.png)
+![alt text](/imagens-readme/image-6.png)
+![alt text](/imagens-readme/image-7.png)
