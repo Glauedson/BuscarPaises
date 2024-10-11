@@ -63,7 +63,13 @@ async function codigoPrincipal() {
     }
 
     InfoPais.innerHTML = `${dadoswiki.extract}`
+
+    try{
     FotoCapital.style.backgroundImage =  `url(${CapitalDados.originalimage.source})`
+    } catch (error){
+    FotoCapital.style.backgroundImage = `url(../Imagens/Icons/não_encontrado.png)`
+    }
+
     InfoCapital.innerHTML = `${CapitalDadosBR.extract}`
 
     // Leaflet 
@@ -81,6 +87,4 @@ async function codigoPrincipal() {
 
   }
 
-  document.addEventListener("DOMContentLoaded", function() {
-    codigoPrincipal();
-});
+codigoPrincipal();

@@ -45,6 +45,21 @@ function mostrarPaises(paises) {
 
     todosPaisesDiv.appendChild(paisDiv)
   }
+  
+  if (paises.length == 0){
+    var paisDiv = document.createElement("div")
+    paisDiv.classList.add("pais")
+
+    paisDiv.innerHTML = `
+      <img
+          width="150"
+          src="Src/Imagens/Icons/não_encontrado.png"
+          alt="País não encontrado"
+      />
+      <p>País não encontrado</p>
+    `
+    todosPaisesDiv.appendChild(paisDiv)
+  }
 }
 
 function abrirPaginaDetalhes(event){
