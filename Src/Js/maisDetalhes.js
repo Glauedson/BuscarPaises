@@ -1,3 +1,14 @@
+// Tela de carregamento
+window.addEventListener("load", function() {
+    const precarregamento = document.getElementById("preloader")
+    const content = document.getElementById("content")
+
+    setTimeout(function() {
+        precarregamento.style.display = "none"
+        content.style.display = "block"
+    }, 2000);
+})
+
 // API de paises
 const lerURL = window.location.search
 const URL = new URLSearchParams(lerURL)

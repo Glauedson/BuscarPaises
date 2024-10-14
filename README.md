@@ -1,8 +1,8 @@
-# Buscador de Países
+# Buscar Países
 
 ## Descrição
 
-O **Buscador de Países** é um site que permite ao usuário explorar informações detalhadas sobre países ao redor do mundo. Na página principal, o usuário visualiza bandeiras e os nomes dos países. Ao clicar em uma bandeira, o usuário é redirecionado para uma página dedicada ao país selecionado, com mais informações, incluindo texto e imagens, fornecidas pela API RestCountries e pela API do Wikipedia.
+O **Buscar Países** é um site que permite ao usuário explorar informações detalhadas sobre países ao redor do mundo. Na página principal, o usuário visualiza bandeiras e os nomes dos países. Ao clicar em uma bandeira, o usuário é redirecionado para uma página dedicada ao país selecionado, com mais informações, incluindo texto e imagens, fornecidas pela API RestCountries e pela API do Wikipedia.
 
 ## Tela inicial no computador
 ![alt text](/imagens-readme/image.png)

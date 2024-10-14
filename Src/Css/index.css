@@ -125,7 +125,7 @@ main{
     transition: 1s;
 }
 
-
+ /* Animação de carregamento */
 
 @keyframes blink {
     0% {

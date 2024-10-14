@@ -9,13 +9,18 @@
     <title id="nomeTopo"></title>
 </head>
 <body>
+
+    <div id="preloader">
+        <img src="../Imagens/Icons/map-solid.svg" alt="Logo do Site" class="carregar">
+    </div>
+
     <header id="background">
             <div class="logo">
                 <img width="30px" src="../Imagens/Icons/map-solid.svg">
                 <h1>BUSCAR PAÍSES</h1>
             </div>
-        </div>
     </header>
+
     <main>
        <div class="inicio">
             <div class="home-pais">
@@ -29,14 +34,14 @@
             </div>
         </div> 
         <div class="bandeira-info">
-            <div id="bandeira-pais" class="bandeira">
-
-            </div>
+            <div id="bandeira-pais" class="bandeira"></div>
             <div class="info">
                 <p id="wiki-info-pais"></p>
             </div>
         </div>
+
         <!--Informações em caixas-->
+
         <div class="info-pais-caixa">
             <div class="caixa-prin">
                 <div class="lingua">
@@ -91,7 +96,9 @@
                 </div>
             </div>
         </div>
+
         <!--Capital area-->
+
         <div class="capital-titulo">
             <p>CAPITAL:</p>
             <h1 id="capial"></h1>
@@ -100,14 +107,14 @@
             <div class="info-capital">
                 <p id="Info-Capital"></p>
             </div>
-            <div id="Foto-Capital" class="foto-capital">
-            </div>
+            <div id="Foto-Capital" class="foto-capital"></div>
         </div>
         <div class="titulo-maps">
             <p>MAPA</p>
         </div>
         <div id="map" style="height: 500px; width: 80%;"></div>
     </main>
+
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="../Js/maisDetalhes.js"></script>
 </body>
